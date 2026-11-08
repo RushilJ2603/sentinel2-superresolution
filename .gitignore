@@ -1,0 +1,23 @@
+# Dataset archives and cached arrays. Fetch with src/fetch_data.py and
+# rebuild with src/prepare_data.py; see the README.
+data/
+
+# Model checkpoints
+results/ckpt/
+*.pt
+
+# Run logs
+results/*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
