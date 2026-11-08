@@ -58,6 +58,7 @@ PANEL2 = RGBColor(0xF7, 0xFA, 0xFC)
 BORDER = RGBColor(0xCF, 0xDC, 0xE6)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 FONT = "Calibri"
+AUTHOR = "Rushil J"
 
 prs = Presentation()
 prs.slide_width = Inches(13.333)
@@ -1287,6 +1288,15 @@ notes(s, "Close on the arc: a negative result, diagnosed, then turned into "
          "threshold on σ to produce a reject option with a measured "
          "error-coverage curve.")
 
+
+# python-pptx stamps its own maintainer into the document
+# properties of the default template; set them explicitly.
+cp = prs.core_properties
+cp.author = AUTHOR
+cp.last_modified_by = AUTHOR
+cp.title = 'Super-resolution of Sentinel-2 satellite imagery'
+cp.comments = ""
+cp.category = ""
 
 out = os.path.join(ROOT, "NNDL_EndSem_SR_Sentinel2.pptx")
 prs.save(out)
