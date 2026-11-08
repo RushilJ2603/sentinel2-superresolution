@@ -6,8 +6,27 @@ data/
 results/ckpt/
 *.pt
 
-# Run logs
+# Run logs and working notes
 results/*.log
+results/NIGHT_PLAN.md
+
+# Personal study material, kept locally
+PROJECT_EXPLAINED.md
+TEACHING.md
+UNCERTAINTY_EXPLAINED.md
+chat.md
+
+# Superseded deck drafts
+NNDL_CourseProject_SR_Sentinel2.pdf
+NNDL_CourseProject_SR_Sentinel2.pptx
+NNDL_CourseProject_SR_Sentinel2_v2/
+
+# Unrelated to this project
+SIH2026_*
+26142-IDEA-PPT.md
+C_Chessboard.cpp
+.cph/
+image.png
 
 # Python
 __pycache__/
@@ -17,6 +36,7 @@ __pycache__/
 venv/
 
 # Editors and OS
+.claude/
 .vscode/
 .idea/
 .DS_Store
